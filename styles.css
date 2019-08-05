@@ -356,6 +356,19 @@ footer {
 	}
 }
 
+.link-menu {
+	display: none;
+	color: #ff0000;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.blue-icon {
+	color: #0000cd;
+}
+
 @media (max-width: 768px) {
 	.content {
 		width: 500px;
@@ -382,7 +395,8 @@ footer {
 	}
 
 	h1 {
-		line-height: 100px;
+		line-height: 70px;
+		padding-top: 20px;
 	}
 
 	h1:before {
@@ -403,6 +417,10 @@ footer {
 
 	.info {
 		font-size: 12px;
+	}
+
+	.link-menu {
+		display: block;
 	}
 }
 
