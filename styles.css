@@ -1,0 +1,421 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* background: url("../img/bg-menu.JPG") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+   background-size: cover; */
+   background-color: #82d16f;
+   
+}
+
+.top {
+	width: 100%;
+	height: 110px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.hamburger {
+	display: none;
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: relative;
+	padding: 1px 5px 5px 5px;
+
+}
+
+.hamburger div {
+	width: 90%;
+	height: 2px;
+	margin-top: 5px;
+	background-color: #ff0000;
+	border: 1px solid #000;
+	border-radius: 2px;
+}
+
+h1 {
+	font-family: 'Russo One', sans-serif;
+	color: #ff0000;
+	text-align: center;
+	text-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #000, 0px 3px 0px #000, 0px 4px 0px #000, 0px 5px 0px #000;
+	/* text-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666; */
+	padding-top: 50px;
+	font-size: 45px;
+	margin: 0 20px;
+}
+
+/* .logo {
+	font-family: "FangSong", "ä»¿å®‹", STFangSong, "åŽæ–‡ä»¿å®‹";
+	font-size: 50px;
+} */
+
+/* h1:before {
+	content: " ";
+	position: absolute;
+	top: 12px;
+	left: 16px;
+	z-index: 100;
+	width: 240px;
+	border-bottom: 1px solid #ff0000;
+	-webkit-box-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666;
+    -moz-box-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666;
+    -o-box-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666;
+	box-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666;
+}
+
+h1:after {
+	content: " ";
+	position: absolute;
+	top: 90px;
+	left: 16px;
+	z-index: 100;
+	width: 240px;
+	border-bottom: 1px solid #ff0000;
+	-webkit-box-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666;
+    -moz-box-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666;
+    -o-box-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666;
+	box-shadow: 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0 0 1px #000000, 0px 2px 0px #FFFFFF, 0px 3px 0px #888, 0px 4px 0px #777, 0px 5px 0px #666;
+} */
+
+nav {
+	float: right;
+	height: 110px;
+}
+
+ul {
+	list-style: none;
+	line-height: 110px;
+	height: 110px;
+
+}
+
+ul li {
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+
+}
+
+ul li a {
+	color: #fff;
+	display: inline;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: 'Quicksand', sans-serif;
+}
+
+ul li a:hover {
+	color: #ff0000;
+	-webkit-transition: 0.5s ease-in-out 0s;
+    -moz-transition: 0.5s ease-in-out 0s;
+    -o-transition: 0.5s ease-in-out 0s;
+    transition: 0.5s ease-in-out 0s;
+}
+
+.current {
+	color: #ff0000;
+}
+
+.content {
+	margin: 50px auto 0 auto;
+	overflow: hidden;
+	width: 1000px;
+	/* font-family: 'Josefin Sans', sans-serif; */
+	font-family: 'Open Sans', sans-serif;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-color: #FFFFCC;
+	color: #000;
+	padding: 8px 20px 35px;
+	border: 2px solid #ff0000;
+	border-radius: 20px;
+	margin-bottom: 50px;
+}
+
+.content h2 {
+	font-size: 20px;
+	text-align: center;
+	line-height: 78px;
+  text-decoration: underline;
+  color: #ff0000;
+}
+
+.leftsection {
+	float: left;
+	margin-left: 50px
+}
+
+.rightsection {
+	float: right;
+	margin-right: 50px;
+}
+
+.menu {
+	width: 420px;
+}
+
+.content th {
+	text-align: left;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.content td {
+	text-align: right;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: top;
+	width: 80px;
+}
+
+.note {
+	color: #0000cd;
+	line-height: 20px;
+}
+
+.dish {
+	font-size: 16px;
+	line-height: 45px;
+	font-weight: bolder;
+  text-decoration: underline;
+  color: #ff0000;
+}
+
+.center {
+	text-align: center;
+}
+
+.chilli {
+	/* color: #ff0000; */
+}
+
+.nuts {
+	color: '';
+	margin-bottom: 50px;
+}
+
+/* .icons {
+	height:
+} */
+
+footer {
+	background-color: rgba(0, 0, 0, 0.97);
+	width: 100%;
+	height: 55px;
+	margin-top: 50px;
+}
+
+.info {
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 4px;
+	line-height: 23px;
+}
+
+.icons {
+  height: 12px;
+  width: 12px;
+}
+
+.icons-large-margin {
+  height: 14px;
+  width: 14px;
+  padding-left: 5px;
+}
+
+.main-info {
+	text-align: center !important;
+	color: #ff0000;
+	font-weight: bolder;
+}
+
+.top-content {
+	text-align: center;
+}
+
+.blue-style {
+	color: #0000cd;
+	font-weight: bolder;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.red-style {
+	color: #ff0000;
+	font-weight: bolder;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.mb {
+	margin-bottom: 20px;
+}
+
+.mb- {
+	margin-bottom: 5px;
+}
+
+.opening-style {
+	color: #0000cd;
+	font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 1070px) {
+	.content {
+		width: 875px;
+	}
+
+	.leftsection {
+		margin-left: 0px;
+	}
+
+	.rightsection {
+		margin-right: 0px;
+	}
+}
+
+@media (max-width: 940px) {
+	.hamburger {
+		display: block;
+		position: relative;
+		top: 35px;
+		right: 18px;
+	}
+
+	ul {
+		position: absolute;
+		display: inline-block;
+		width: 100%;
+		top: 110px;
+		left: 0px;
+		height: 200px;	
+	}
+
+	ul li {
+		display: none;
+		height: 50px;
+		line-height: 50px;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+
+	ul li a {
+		display: block;
+		font-size: 13px;
+	}
+
+	ul li:hover {
+		background-color: rgba(255, 0, 0, 0.9);
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+	}
+
+	ul li a:hover {
+		color: #fff;
+	}
+
+	.current {
+		color: #fff;
+	}
+
+	.displayMenu {
+		display: block;
+	}
+
+	.addMargin {
+		margin-bottom: 250px;
+	}
+
+	.content {
+		width: 700px;
+	}
+
+	.leftsection {
+		float: none;
+	}
+
+	.rightsection {
+		float: none;
+	}
+
+	.menu {
+		margin: 0 auto;
+	}
+
+	.dish {
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		width: 500px;
+	}
+}
+
+@media (max-width: 650px) {
+	.content {
+		width: 400px;
+	}
+
+	.content th, .content td {
+		font-size: 12px;
+	}
+
+	.menu {
+		width: 380px;
+	}
+}
+
+@media (max-width: 462px) {
+	.logo {
+		display: none;
+	}
+
+	h1 {
+		line-height: 100px;
+	}
+
+	h1:before {
+		width: 143px;
+	}
+
+	h1:after {
+		width: 143px;
+	}
+
+	.content {
+		width: 290px;
+	}
+
+	.menu {
+		width: 285px;
+	}
+
+	.info {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 350px) {
+	.content {
+		width: 210px;
+	}
+
+	.menu {
+		width: 205px;
+	}
+
+	.info {
+		font-size: 12px;
+	}
+}
